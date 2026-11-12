@@ -1,0 +1,49 @@
+{
+  "name": "@asentrise/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/generate-browser-sources.mjs && tsc -p tsconfig.build.json && node scripts/copy-sources.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "sim": "node scripts/sim/full-system.test.mjs",
+    "deploy": "tsx scripts/deploy-new-pad.ts",
+    "fees:check": "tsx scripts/check-fees-treasury.mts",
+    "e2e:pad": "tsx scripts/e2e-ui-live.ts",
+    "e2e:dual": "tsx scripts/e2e-dual-dex.ts",
+    "e2e:lp": "tsx scripts/e2e-lp-rewards.ts",
+    "deployer:info": "tsx scripts/deployer-info.ts",
+    "burn-nonce": "tsx scripts/burn-stale-nonce.ts",
+    "sim:attacks": "node scripts/sim/attacks.test.mjs"
+  },
+  "dependencies": {
+    "@asentrise/config": "workspace:*",
+    "@asentrise/types": "workspace:*",
+    "@asentrise/utils": "workspace:*",
+    "@asentum/crypto": "^0.1.0",
+    "@asentum/sdk": "^0.3.0",
+    "@noble/post-quantum": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}

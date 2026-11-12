@@ -1,0 +1,21 @@
+# asepad.fun — apex. Old monolith paths 301 to their new subdomains.
+/api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
+/api/*                https://api.asepad.fun/api/:splat                    302
+/favicon.ico          /icon.png              200
+/asedex/*            https://asedex.asepad.fun/:splat      301
+/asedex                 https://asedex.asepad.fun             301
+/asepad/token/*         https://pump.asepad.fun/token/:splat  301
+/asepad                 https://pump.asepad.fun               301
+/asepad/*               https://pump.asepad.fun/:splat        301
+/create                 https://create.asepad.fun             301
+/create/*               https://create.asepad.fun/:splat      301
+/lock/v2/*              https://locks.asepad.fun/v2/:splat    301
+/lock/*                 https://locks.asepad.fun/:splat       301
+/lock                   https://locks.asepad.fun              301
+/docs/*                 https://docs.asepad.fun/:splat        301
+/docs                   https://docs.asepad.fun               301
+/privacypolicy          https://policy.asepad.fun/privacy     301
+/auditreport            https://asevault.asepad.fun/audit     301
+/asevault               https://asevault.asepad.fun           301
+/admin                  https://admin.asepad.fun              301
+/admin/*                https://admin.asepad.fun/:splat       301

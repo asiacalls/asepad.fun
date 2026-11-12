@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(232, 232, 232, 0.14), transparent 55%),
+    radial-gradient(900px 700px at 80% 10%, rgba(168, 168, 168, 0.18), transparent 60%),
+    linear-gradient(180deg, #000000, #050505 35%, #000000);
+  color: #f0f0f0;
+}
+
+/* slightly larger base type on desktop — mobile keeps 16px */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-brand), var(--font-sans), sans-serif;
+}
+
+::selection {
+  background: rgba(212, 212, 212, 0.25);
+  color: #ffffff;
+}
+
+/* native form popups must follow the dark theme, not the OS default */
+select,
+select option {
+  background-color: #0b0d14;
+  color: #f0f0f0;
+}
+
+/* slim dark scrollbars — platform theme instead of the default white track */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@layer utilities {
+  .bg-grid-mesh {
+    background-image:
+      linear-gradient(rgba(212, 212, 212, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 212, 212, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
+  }
+
+  .bg-scanlines {
+    background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+  }
+
+  .text-neon {
+    text-shadow: 0 0 24px rgba(232, 232, 232, 0.35), 0 0 48px rgba(168, 168, 168, 0.2);
+  }
+
+  .text-chrome-gradient {
+    background-image: linear-gradient(180deg, #ffffff 0%, #e8e8e8 40%, #b0b0b0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .border-glow {
+    box-shadow: 0 0 0 1px rgba(212, 212, 212, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+}
+

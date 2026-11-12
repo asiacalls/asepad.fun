@@ -1,0 +1,15 @@
+# AsePad
+
+> AsePad is a decentralized launchpad and DeFi exchange on the Asentum blockchain. It is a crypto/DeFi platform - not stock trading, not a broker.
+
+AsePad lets anyone create ARC-20 tokens, launch them on bonding curves (fair launches), trade on AseDex (the on-chain DEX with markets, terminal, pools, limit orders and wallet portfolio), lock LP/tokens/vesting with AseLock, and use AseVault as the Asentum wallet app. Everything is fully on-chain; LP is burned forever at migration.
+
+## Sections
+- Launches (bonding-curve tokens): https://pump.asepad.fun/
+- Create a token: https://create.asepad.fun/
+- AseDex exchange + terminal: https://asedex.asepad.fun/
+- Token/LP/vesting locks (AseLock): https://locks.asepad.fun/
+- Documentation: https://docs.asepad.fun/
+- AseVault wallet + security audit: https://asevault.asepad.fun/
+- Policies: https://policy.asepad.fun/privacy
+- API: https://api.asepad.fun/api/

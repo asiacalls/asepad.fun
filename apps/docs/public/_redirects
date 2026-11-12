@@ -1,0 +1,5 @@
+# docs.asepad.fun — documentation.
+/api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
+/api/*                https://api.asepad.fun/api/:splat                    302
+/favicon.ico          /icon.png              200
+/*                    /index                  200

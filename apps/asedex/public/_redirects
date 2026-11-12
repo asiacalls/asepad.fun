@@ -1,0 +1,7 @@
+# asedex.asepad.fun — Cloudflare Pages rules for the static export (out/).
+# API lanes: /api/indexer/* → explorer indexer; other /api/* → unified AWS API.
+/api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
+/api/*                https://api.asepad.fun/api/:splat                    302
+/favicon.ico          /icon.png              200
+/wallets              /wallet                301
+/terminal/*           /terminal              200

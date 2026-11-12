@@ -1,0 +1,48 @@
+{
+  "networkKey": "asentum-testnet",
+  "updatedAt": "2026-06-12T15:45:24.416Z",
+  "tokens": [
+    {
+      "archetype": "STANDARD",
+      "symbol": "TSTND",
+      "address": "0x64b76fd889b754db325e26a955eab87d68bb93b4",
+      "txHash": "0x46466a00350e67b447f6f960e193cfebeec98b87b5490e16489679879a912bdc"
+    },
+    {
+      "archetype": "TAX",
+      "symbol": "TTAX",
+      "address": "0x787c555a503be7030415f017a3cf25d0094f6d4c",
+      "txHash": "0xc42606d22825223d5ef9c82d36bbf9ecb81ffc23e760b765ef2a96afbf03fc6b"
+    },
+    {
+      "archetype": "DEFLATIONARY",
+      "symbol": "TDEFL",
+      "address": "0xc7f51bba17a7850175413c7a4cf80a198fadaa46",
+      "txHash": "0x1082f759821d5a0e6680bf9d39213ee66dbda30738529982dacdfc878a007f02"
+    },
+    {
+      "archetype": "REFLECTION",
+      "symbol": "TRFLX",
+      "address": "0x1435e34dd726a6683013ff774350a850cf91081d",
+      "txHash": "0x1df45eb957b3ebf00e05213796124a5f3345ccd6b646a81fe3eb5598fd750206"
+    },
+    {
+      "archetype": "AUTO_LP",
+      "symbol": "TALP",
+      "address": "0x8dd99a4acdc2e53b180f67cf6f647574faeda072",
+      "txHash": "0xede40f84d356857cef75d50f09476e0ebd2847ab73a5ce5f1c6841fbe7344a64"
+    },
+    {
+      "archetype": "ANTI_BOT",
+      "symbol": "TFAIR",
+      "address": "0x7f995404ca2df51b5823e4c3b7033d1966969fcd",
+      "txHash": "0xebadc1508a3c75fbbb84ef69b7c3f566d70f5e3df340676219b845bec718c950"
+    },
+    {
+      "archetype": "COMMUNITY",
+      "symbol": "TCOMM",
+      "address": "0x3e5c28b7f3cc70a710cf5836567cab3c288bf07d",
+      "txHash": "0xfd264fac775fac9322ca60780f8012610074684f798f0631617b4c75409a0281"
+    }
+  ]
+}

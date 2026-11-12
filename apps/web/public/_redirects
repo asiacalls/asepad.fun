@@ -1,0 +1,26 @@
+# Cloudflare Pages rules for the static export (out/).
+#
+# Only client-routed deep links get 200 rewrites — every real exported page
+# (create, asedex/markets, docs/*, admin/*, ...) is a file on disk and
+# must never be shadowed by a catch-all. Rewriting to a *.html file or a dir
+# path makes Pages answer 308 to the canonical URL, so targets below are
+# canonical clean paths of flat html shells emitted by post-export.mjs.
+#
+# /asepad/token/* and /lock/* point at /_sh/* copies of their placeholder
+# shells: a rewrite target inside its own wildcard (/asepad/token/_) loops on
+# Pages.
+#
+# NOTE: Pages does NOT support external 200 proxies (Netlify did) — chain RPC
+# calls are relayed by the Pages Function in functions/rpc/, and
+# /api/indexer/* by functions/api/indexer/.
+# API lanes — the AWS unified API serves every domain; the old Cloudflare
+# worker shards are retired. /api/indexer/* goes straight to the explorer
+# indexer; everything else lands on AWS (match order matters — specific first).
+/api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
+/api/*                https://api.asepad.fun/api/:splat     302
+/favicon.ico          /icon.png              200
+/asepad/create        /create                301
+/asedex/wallets       /asedex/wallet         301
+/asepad/token/*       /_sh/token             200
+/lock/*               /_sh/lock              200
+/asedex/terminal/*    /asedex/terminal       200

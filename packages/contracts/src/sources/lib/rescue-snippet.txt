@@ -1,0 +1,7 @@
+// Standard owner-only rescue methods — append to platform contracts (use ADMIN_KEY).
+// Token contracts use RESCUE_OWNER_KEY set to deployer in init().
+
+// transferRescueOwner(newOwner) — rotate rescue authority
+// rescueAse(to, amountWei) — recover native ASE sent to this contract
+// rescueToken(token, to, amount) — recover ARC-20 balance held by this contract
+// rescueAllToken(token, to) — recover full ARC-20 balance

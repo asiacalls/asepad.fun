@@ -1,0 +1,11 @@
+import { AsentumClient } from "@asentum/sdk";
+const client = new AsentumClient("https://testnet.asentum.com");
+const AURA = "0x63f640a9b98b6f28e06cb5cc0fce5d72b6c0eabd";
+const TOKEN = "0x0ea6ef16cc8d8151cf168b9fcfbc643c6276487f";
+const NATIVE = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
+const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
+await sleep(15000);
+const p = String((await client.viewCall(AURA, "poolForPair", [TOKEN, NATIVE])).returnValue);
+await sleep(8000);
+const raw = (await client.viewCall(AURA, "getPool", [p])).returnValue;
+console.log("pool", p, "=>", JSON.stringify(raw)?.slice(0, 600));

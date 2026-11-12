@@ -1,0 +1,12 @@
+# Generated share-card images are extensionless PNG files — serve them with a
+# real image type so crawlers render them.
+/asepad/token/:address/opengraph-image
+  Content-Type: image/png
+/asedex/terminal/:dex/:pool/opengraph-image
+  Content-Type: image/png
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

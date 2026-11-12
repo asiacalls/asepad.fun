@@ -1,0 +1,41 @@
+# dependencies / build output
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# env & secrets — nothing with values ever ships
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.crt
+*.pfx
+
+# cloudflare local state, dumps, snapshots
+.wrangler/
+.snapshot/
+dumps/
+
+# server-side code (kept private for safety)
+apps/indexer/
+services/
+tools/
+apps/*/functions/
+
+# markdown docs — only README ships
+*.md
+!README.md
+
+# misc junk
+*.zip
+*.bak
+*.log
+asentrise.code-workspace
+strip.png
+NUL
+apps/api-proxy/
+apps/web/wrangler-worker.toml
+.netlify/

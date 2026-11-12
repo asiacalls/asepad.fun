@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/icon.png" },
+    { "source": "/asepad/token/**", "destination": "/_sh/token.html" },
+    { "source": "/lock/**", "destination": "/_sh/lock.html" },
+    { "source": "/asedex/terminal/**", "destination": "/asedex/terminal.html" }
+  ]
+}

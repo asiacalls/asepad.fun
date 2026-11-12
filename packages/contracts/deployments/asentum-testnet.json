@@ -1,0 +1,36 @@
+{
+  "network": {
+    "key": "asentum-testnet",
+    "name": "Asentum Testnet",
+    "rpcHttp": "https://explorer.asentum.com/rpc",
+    "rpcWs": "wss://explorer.asentum.com/ws",
+    "explorerBaseUrl": "https://explorer.asentum.com",
+    "chainId": "1423"
+  },
+  "deployments": {
+    "arc20_factory": {
+      "address": "0x5fb43f354ce937c42171a64f2ea0e00edbe0c706",
+      "id": "arc20-factory"
+    },
+    "asedex": {
+      "address": "0xc3833b73eb30242289e533b3e97c4b72b97e24e9",
+      "id": "asedex"
+    },
+    "asepad": {
+      "address": "0x1d3c269e105f11cadb6ae993ee8cf403d32f162c",
+      "id": "asepad"
+    },
+    "asedex_v2_legacy": {
+      "address": "0x8220c5108113728eac1a36000470024c6a96f80c",
+      "id": "asedex-v2-legacy"
+    },
+    "asepad_legacy": {
+      "address": "0x56cb9e3743d16ee72155ef4a8da87cbc06d77eb6",
+      "id": "asepad-legacy"
+    }
+  },
+  "deployedAt": "2026-10-03T00:00:00.000Z",
+  "confirmed": true,
+  "deployer": "0x8f36186cb65F7c20eD9f7C26F23CE5360E2a2A0E",
+  "treasury": "0x1893731bb05cae5ae3bce6a1e5521e44f17e908d"
+}

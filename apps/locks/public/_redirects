@@ -1,0 +1,9 @@
+# aselock.asepad.fun — Cloudflare Pages rules for the static export (out/).
+# /lock/<id> and /lock/v2/<id> serve the prebuilt "_" SPA shell; the page reads
+# the lock id from the URL. _sh copy keeps the rewrite target outside its own
+# wildcard. No /* catch-all — it would shadow /_next and other real files.
+/api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
+/api/*                https://api.asepad.fun/api/:splat                    302
+/favicon.ico          /icon.png              200
+/lock                 /_sh/lock              200
+/lock/*               /_sh/lock              200
