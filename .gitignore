@@ -39,3 +39,8 @@ NUL
 apps/api-proxy/
 apps/web/wrangler-worker.toml
 .netlify/
+
+# build tooling — internal only
+scripts/
+apps/*/scripts/
+packages/*/scripts/
