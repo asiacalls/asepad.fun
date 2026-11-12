@@ -16,7 +16,9 @@ import { href as siteHref } from "@/lib/site";
 const APP_VERSION = "1.1.1";
 // APK downloads ride Google Drive — serving the 125 MB binary from the site
 // burned Netlify CDN bandwidth on every install.
-const APK_URL = "https://drive.usercontent.google.com/download?id=1vPvSlUBZK0i8EWgVH5Oo7OfkdccB17Db&export=download&confirm=t";
+// APK downloads straight from the GitHub release asset — one less redirect
+// hop so Android webview downloaders don't stall on the signed-URL chain.
+const APK_URL = "https://github.com/asiacalls/asepad.fun/releases/download/apk-v1.1.1/asevault.apk";
 
 function SectionTitle({ eyebrow, title, desc }: { eyebrow: string; title: string; desc: string }) {
   return (

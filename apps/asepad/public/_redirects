@@ -1,3 +1,4 @@
+/app.apk             https://asevault.asepad.fun/app.apk   302
 # asepad.fun — apex. Old monolith paths 301 to their new subdomains.
 /api/indexer/*        https://explorer.asentum.com/api/indexer/:splat      302
 /api/*                https://api.asepad.fun/api/:splat                    302
